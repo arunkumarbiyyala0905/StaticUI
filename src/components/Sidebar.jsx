@@ -29,7 +29,7 @@ export default function Sidebar() {
           <List sx={{ width: '17.5vw', height: '81.65vh', borderBottom: '1px solid #D2D2D2' }}>
               <ListItem button>
 
-                  <Box sx={{ display: 'flex', alignItems: 'center', width: 288, background: '#C8102E', color: '#fff' }}>
+                  <Box sx={{ display: 'flex', alignItems: 'center', width: 288, background: '#C5203F', color: '#fff' }}>
                       <ListItemIcon sx={{ minWidth: 32, mr: 0 }}>
                           <img src={Plus} alt="Chat History" style={{ width: 24, height: 24 }} />
                       </ListItemIcon>
@@ -40,6 +40,8 @@ export default function Sidebar() {
                               textOverflow: 'ellipsis',
                               minWidth: 0,
                               flexShrink: 1,
+                              letterSpacing: '0em',
+                              fontWeight: 400,
                               fontSize: { xs: '0.95rem', sm: '1rem' }
                           }} />
                   </Box>
@@ -56,6 +58,9 @@ export default function Sidebar() {
                               textOverflow: 'ellipsis',
                               minWidth: 0,
                               flexShrink: 1,
+                              color:'#72737C',
+                              letterSpacing: '0em',
+                              fontWeight: 400,
                               fontSize: { xs: '0.95rem', sm: '1rem' }
                           }} />
                   </Box>
@@ -73,6 +78,9 @@ export default function Sidebar() {
                               textOverflow: 'ellipsis',
                               minWidth: 0,
                               flexShrink: 1,
+                              color:'#72737C',
+                              letterSpacing: '0em',
+                              fontWeight: 400,
                               fontSize: { xs: '0.95rem', sm: '1rem' }
                           }} />
                   </Box>
@@ -83,7 +91,9 @@ export default function Sidebar() {
           <Box sx={{ height: '10.20vh', display: 'flex', alignItems: 'center' }}>
               <Button
                   startIcon={<LogoutIcon />}
-                  sx={{ color: '#54565B', textTransform: 'none', width: '100%', justifyContent: 'flex-start', left: 24 }}
+                  sx={{ color: '#54565B', textTransform: 'none', width: '100%', justifyContent: 'flex-start', left: 24, 
+                    letterSpacing: '0em', fontWeight: 400, lineHeight: '20px', fontStyle: 'Regular',
+                   }}
               >
                   Log Out
               </Button>

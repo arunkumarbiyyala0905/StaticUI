@@ -24,7 +24,9 @@ export function LandingScreenHeader() {
             background:  '#FD9AAD',
             borderRadius: 20,
             textTransform: 'none',
-            fontWeight: 500,
+            fontWeight: 400,
+            fontStyle: 'Regular',
+            letterSpacing: '0em',
           }}
         >
           Share
@@ -49,13 +51,15 @@ export function ChattingScreenHeader() {
       height: '8.16vh'
     }}>
       <Typography variant="h6"  sx={{
-    color: '#C8102E',
-    fontWeight: 500,
+    color: '#C5302F',
+    fontWeight: 400,
     paddingLeft: 4,
     height: '24px',
     lineHeight: '24px',
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    letterSpacing: '0em',
+    lineHeight: '20px',
   }}>
         IC Attainment
       </Typography>
@@ -70,7 +74,10 @@ export function ChattingScreenHeader() {
             background:  '#fff',//background:  '#FD9AAD'
             borderRadius: 20,
             textTransform: 'none',
-            fontWeight: 500,
+            fontWeight: 400,
+            fontStyle: 'Regular',
+            letterSpacing: '0em',
+            lineHeight: '20px',
           }}
         >
           Share
@@ -83,7 +90,10 @@ export function ChattingScreenHeader() {
             color: '#fff',
             borderRadius: 20,
             textTransform: 'none',
-            fontWeight: 500,
+            fontWeight: 400,
+            fontStyle: 'Regular',
+            letterSpacing: '0em',
+            lineHeight: '20px',
           }}
         >
           Export

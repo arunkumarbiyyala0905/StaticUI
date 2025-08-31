@@ -5,6 +5,7 @@ import InsightsIcon from '@mui/icons-material/Insights';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ThumbUpAltOutlinedIcon from '@mui/icons-material/ThumbUpAltOutlined';
 import ThumbDownAltOutlinedIcon from '@mui/icons-material/ThumbDownAltOutlined';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
@@ -71,7 +72,8 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                         fontSize: '20px',
                         mb:1,
                        height: '24px',
-                    //   lineHeight: '28px',
+                       letterSpacing: '0em',
+                      lineHeight: '28px',
                     //   letterSpacing: '0em',
                   }}//font-family: Inter;
 
@@ -79,7 +81,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
   >
     Crafted with intelligence at its core.
   </Typography>
-   <Typography  sx={{ color: '#999999', mb: 2, fontSize: '16px', fontWeight: 400,height: '20px', }}>
+   <Typography  sx={{ color: '#999999', mb: 2, fontSize: '16px', fontWeight: 400,height: '20px',fontStyle:'Medium' }}>
     Built to assist every step of the way.
   </Typography>
     {/* Feature cards and question cards */}
@@ -105,7 +107,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                   >
                       <img src={AISummarizedIcon} alt="AI Summarized" style={{ width: 16, height: 16, marginTop: 12 }} />
                       <Typography sx={{ mt: 2, fontWeight: 500, color: '#27272A', fontSize: 10, }}>
-                          AI-Summarized Insights
+                          AI-Summarized <br/>Insights
                       </Typography>
                   </Paper>
                   <Paper
@@ -181,7 +183,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
         }}
         elevation={0}
       >
-        <Typography sx={{ fontSize: 10, color: "#27272A" }}>
+        <Typography sx={{ fontSize: 10, color: "#27272A", fontStyle: 'Regular', fontWeight: 400, letterSpacing: '0em', lineHeight: '20px' }}>
           Which HCPs should I prioritize to maximize my IC <br/>attainment?
         </Typography>
       </Paper>
@@ -197,7 +199,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
         }}
         elevation={0}
       >
-        <Typography sx={{ fontSize: 10, color: "#27272A" }}>
+        <Typography sx={{ fontSize: 10, color: "#27272A",fontStyle: 'Regular', fontWeight: 400, letterSpacing: '0em', lineHeight: '20px' }}>
           If the top 3 doctors underperform this quarter, how will it <br/> affect my
           IC attainment?
         </Typography>
@@ -247,7 +249,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
       variant="standard"
       placeholder="Ask me Anything"
       InputProps={{ disableUnderline: true ,
-        sx:{ fontSize: 14, fontWeight:400,  color:'#27272A', "& .MuiInputBase-input::placeholder"
+        sx:{ fontSize: 14, fontStyle:'Regular', lineHeight:'20px', letterSpacing:'0', fontWeight:400,  color:'#27272A', "& .MuiInputBase-input::placeholder"
             :{color:'#27272A', opacity:1}},
       }}
       sx={{ flex: 1, alignSelf: 'flex-start', 
@@ -264,7 +266,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                           sx={{
                               borderRadius: 0, width: '96px', height: '40px',
                               color: '#999999', mr: 1, textTransform: 'none',
-                               border: '1px solid #D2D2D2', gap:0.5
+                               border: '1px solid #D2D2D2', gap:0.5,fontStyle: 'Regular',
                           }}
                       ><img src={ToolsIcon}
                           alt="ToolsIcon"
@@ -274,7 +276,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
     <Button
       variant="outlined"
       sx={{ borderRadius: 0, width:'96px', height:'40px',  color:'#999999',
-         textTransform:'none', border:'1px solid #D2D2D2', gap:0.5 }}
+         textTransform:'none', border:'1px solid #D2D2D2', gap:0.5,fontStyle: 'Regular', }}
     ><img src={VoiceIcon} 
      alt="VoiceIcon" 
      style={{ width: '16px', height: '16px',  }} />
@@ -284,7 +286,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
     <IconButton
       color="primary"
       sx={{
-        background: "#C8102E",
+        background: 'linear-gradient(360deg, #C5203F 0%, #E44F6B 100%)',
         borderRadius:0,
         color: "#fff",
         ml: 1,
@@ -416,24 +418,25 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
   const ChatScreen = (
       <Box sx={{ background: '#fafbfc', height: '81.64vh', width: '82.5vw', position: 'relative', paddingLeft: '30px' }}>
           <Paper elevation={0} sx={{ mb: 1, position: 'absolute', left: '48%', width: '46%', borderRadius: 1 }}>
-              <Typography variant="caption" sx={{ color: '#666666', background: '#fff', display: 'flex', justifyContent: 'flex-end' }}>
+              <Typography variant="caption" sx={{ color: '#666666',fontStyle: 'Regular', background: '#fff', display: 'flex', justifyContent: 'flex-end' }}>
                   2:03 PM, 20 Aug
               </Typography>
-              <Typography variant="body1" sx={{ color: '#27272A', background: '#E6E6E6', fontSize: 14, fontWeight: 400, height: '4.9%', display: 'flex', alignItems: 'center', paddingLeft: 2 }}>
+              <Typography variant="body1" sx={{ color: '#27272A', background: '#E6E6E6', fontSize: 14, fontStyle: 'Regular',
+                fontWeight: 400, height: '4.9%', display: 'flex', alignItems: 'center', paddingLeft: 2 }}>
                   {"Which HCPs should I prioritize to maximize my IC attainment?"}
               </Typography>
           </Paper>
 
           <Box sx={{
-              flex: 1, display: "flex", flexDirection: "column", gap: 2, position: 'absolute', left: '2%',
-              top: '9%', width: '92%', height: '88%', background: '#fff', boxShadow: 1
+              flex: 1, display: "flex", flexDirection: "column", gap: 1, position: 'absolute', left: '2%',
+              top: '9%', width: '92%', height: '88%', background: '#fff'
           }}>
               <Typography variant="caption" sx={{
                   color: '#666666', background: '#fff', display: 'flex',
-                  justifyContent: 'flex-start', position: 'absolute', fontSize: 14, mb: 2
+                  justifyContent: 'flex-start', position: 'absolute', fontSize: 14, mb: 2, gap:1,fontStyle: 'Regular',
               }}>
                   <img src={gileadLogo}
-                      alt="Landing Visual" style={{ width: '20px', height: '20px', gap: 0.5 }} />
+                      alt="Landing Visual" style={{ width: '20px', height: '20px', }} />
                   2:03 PM, 20 Aug
               </Typography>
               <Box sx={{
@@ -441,25 +444,30 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                   justifyContent: 'space-between', position: 'absolute', top: '24px',
               }}>
                   <Box sx={{ width: '50%',  gap: 1, display: 'flex', flexDirection: 'column', }}>
-                      <Paper elevation={0} sx={{ background: '#E6FAF0', p: 2, borderRadius: 0, }}>
-                          <Typography variant="subtitle2" sx={{ color: '#4CAF50', mb: 1 }}>
+                      <Paper elevation={0} sx={{ background: '#E9FFF3', p: 2, borderRadius: 0,height:'156px', 
+                        fontSize:14,  }}>
+                          <Typography variant="subtitle2" sx={{ color: '#999999', mb: 1,fontStyle: 'Regular', }}>
                               HCP Prioritization
                           </Typography>
-                          <Typography variant="body2" sx={{ color: '#222' }}>
+                          <Typography variant="body2" sx={{ color: '#00933B',letterSpacing:0, lineHeight:'20px',
+                            fontStyle:'Medium', fontWeight:500 }}>
                               Focus on Dr. Sharma, Dr. Patel, and Dr. Mehra who together account for 22% of territory potential growth and have shown high responsiveness to prior engagements. Engaging them effectively could contribute up to +8% IC uplift this quarter.
                           </Typography>
                       </Paper>
                       <img src={dashboard}
-                          alt="Landing Visual" style={{ width: '100%', height: '90%', gap: 0.5 }} />
+                          alt="Landing Visual" style={{ width: '100%', height: '90%',objectFit: 'contain', gap: 0.5 }} />
                   </Box>
                   <Box sx={{ display: 'flex', gap: 1, width: '50%', flexDirection: 'column', }}>
                       <Paper elevation={0} sx={{ p: 2, borderRadius: 0, background: '#F8F8F8', height: '348px' }}>
                           <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
-                              <Typography variant="subtitle2" sx={{ color: '#222' }}>
+                              <Typography variant="subtitle2" sx={{ color: '#000',letterSpacing:0, lineHeight:'20px',
+                                fontStyle: 'Regular', fontWeight:400  }}>
                                   Top Priority HCPs for IC Impact
                               </Typography>
-                              <Button variant="outlined" size="small" sx={{ borderRadius: 2, fontSize: 12, px: 2, py: 0, minWidth: 0 }}>
-                                  Q3 2025
+                              <Button variant="outlined" size="small" sx={{ borderRadius: 0, fontSize: 12,fontStyle: 'Regular',
+                                 px: 2, py: 0, minWidth: 0, border: '1px solid #D2D2D2',
+                                  textTransform: 'none', color:'#27272A', boxShadow:1, gap:0.25 }}>
+                                  Q3 2025<ArrowDropDownIcon sx={{ fontSize: 18 }} />
                               </Button>
                           </Box>
                           <ResponsiveContainer width="100%" height={231}>
@@ -480,10 +488,13 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                           borderRadius: 0,
                           mt: 0.5,
                           height: '44px',
-                          background: 'linear-gradient(90deg, #E0E7FF 0%, #F8BBD0 100%)',
+                         // background: 'linear-gradient(90deg, #E0E7FF 0%, #F8BBD0 100%)',
+background: 'linear-gradient(91.06deg, rgba(255, 28, 247, 0.1) 2.26%, rgba(0, 240, 255, 0.1) 100%)',
+                           border: '1px solid transparent', // needs transparent first
+                          borderImage: 'linear-gradient(78.7deg, #439DDF 12.52%, #4F87ED 35.44%, #9476C5 46.7%, #BC688E 51.37%, #D6645D 56.25%) 1',
                           textAlign: 'center'
                       }}>
-                          <Button sx={{ color: '#222', fontWeight: 500, textTransform: 'none' }}>
+                          <Button sx={{ color: '#000', fontWeight: 400, fontStyle:'Regular', textTransform: 'none',letterSpacing:'-1.1%', lineHeight:'20px' }}>
                               Build my Own View
                           </Button>
                       </Paper>
@@ -496,7 +507,8 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                   position: 'absolute', top: '375px', background: '#fff',
                   boxShadow: 1, borderRadius: 0, borderTop: '1px solid #D2D2D2'
               }}>
-                  <Typography variant="caption" sx={{ color: '#000000', display: 'flex', alignSelf: 'center', justifyContent: 'center', }}>
+                  <Typography variant="caption" sx={{ color: '#000000', display: 'flex',
+                    fontWeight: 400, fontStyle:'Italic', textTransform: 'none',letterSpacing:'-1.1%', lineHeight:'20px', alignSelf: 'center', justifyContent: 'center', }}>
                       Insights generated using IQVIA Xponent dataset with quarterly filters – verified by analytics logic.
                   </Typography>
               </Box>
@@ -528,22 +540,22 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
               </Box>
               <Box sx={{display: 'flex', gap: 0.5, width: '100%', height: '60px',
                   justifyContent: 'space-between', alignItems: 'center',
-                  position: 'absolute', top: '464px', background: '#fff',
-                  boxShadow: 1, borderRadius: 0, borderTop: '1px solid #D2D2D2'}}>
+                  position: 'absolute', top: '464px', background: '#ffeded',
+                   borderRadius: 0,}}>
                   <Box
                       sx={{
                           flex: 1,
                           height: "100%",
                           display: "flex",
                           alignItems: "center",
-                          justifyContent: "center",
-                          background: "#FDECEC",
-                          borderRadius: 1,
+                          justifyContent: 'flex-start',
+                          background: "#FFEDED",
+                          borderRadius: 0,
                           px: 2,
                           textAlign: "center",
                       }}
                   >
-                      <Typography variant="body2" sx={{ color: "#222" }}>
+                      <Typography variant="body2" sx={{ color: "#27272A",fontStyle:'Regular' ,fontWeight:400, letterSpacing:0, lineHeight:'20px',fontSize:14 }}>
                           Which HCPs have not been called in <br /> the last 4 weeks but show high potential?
                       </Typography>
                   </Box>
@@ -553,14 +565,14 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                           height: "100%",
                           display: "flex",
                           alignItems: "center",
-                          justifyContent: "center",
-                          background: "#FDECEC",
-                          borderRadius: 1,
+                          justifyContent: "flex-start",
+                          background: "#FFEDED",
+                          borderRadius: 0,
                           px: 2,
                           textAlign: "center",
                       }}
                   >
-                      <Typography variant="body2" sx={{ color: "#222" }}>
+                      <Typography variant="body2" sx={{ color: "#27272A",fontStyle:'Regular' ,fontWeight:400, letterSpacing:0, lineHeight:'20px',fontSize:14  }}>
                           What’s the correlation between my call<br /> activity and BVY growth?
                       </Typography>
                   </Box>
@@ -570,22 +582,22 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                           height: "100%",
                           display: "flex",
                           alignItems: "center",
-                          justifyContent: "center",
-                          background: "#FDECEC",
-                          borderRadius: 1,
+                          justifyContent: "flex-start",
+                          background: "#FFEDED",
+                          borderRadius: 0,
                           px: 2,
                           textAlign: "center",
                       }}
                   >
-                      <Typography variant="body2" sx={{ color: "#222" }}>
-                          Which HCPs outside the top 3 show <br />the highest growth potential?
+                      <Typography variant="body2" sx={{  color: "#27272A",fontStyle:'Regular' ,fontWeight:400, letterSpacing:0, lineHeight:'20px',fontSize:14 }}>
+                          Which HCPs outside the top 3 show the highest growth potential?
                       </Typography>
                   </Box>
               </Box>
               <Box sx={{display: 'flex',  width: '75%', height: '140px',
                   justifyContent: 'space-between', alignSelf: 'center',
                   position: 'absolute', top: '460px',
-                   borderRadius: 2, background: '#D2D2D2' }}>
+                    }}>
                   <Box
     sx={{
       position: 'absolute',
@@ -643,7 +655,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                           sx={{
                               borderRadius: 0, width: '96px', height: '40px',
                               color: '#999999', mr: 1, textTransform: 'none',
-                               border: '1px solid #D2D2D2', gap:0.5
+                               border: '1px solid #D2D2D2', gap:0.5,fontStyle: 'Regular',
                           }}
                       ><img src={ToolsIcon}
                           alt="ToolsIcon"
@@ -653,7 +665,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
     <Button
       variant="outlined"
       sx={{ borderRadius: 0, width:'96px', height:'40px',  color:'#999999',
-         textTransform:'none', border:'1px solid #D2D2D2', gap:0.5 }}
+         textTransform:'none', border:'1px solid #D2D2D2', gap:0.5,fontStyle: 'Regular', }}
     ><img src={VoiceIcon} 
      alt="VoiceIcon" 
      style={{ width: '16px', height: '16px',  }} />
@@ -663,7 +675,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
     <IconButton
       color="primary"
       sx={{
-        background: "#C8102E",
+        background: 'linear-gradient(360deg, #C5203F 0%, #E44F6B 100%)',
         borderRadius:0,
         color: "#fff",
         ml: 1,
