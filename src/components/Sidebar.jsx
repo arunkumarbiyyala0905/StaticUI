@@ -5,7 +5,8 @@ import bookIcon from '../assets/bookicon.png'; // Download and place a book icon
 import chatHistoryIcon from '../assets/chatHistoryIcon.png'; // Download and place a chat history icon here
 import chevronRightIcon from '../assets/chevronRightIcon.png'; // Download and place a chevron right icon here
 import workSpaceIcon from '../assets/workSpaceIcon.png'; // Download and place a workspace icon here
-import newIcon from '../assets/newIcon.png'; // Download and place a new chat icon here
+//import newIcon from '../assets/newIcon.png'; // Download and place a new chat icon here
+import newIcon from '../assets/newIcon.png';
 
 export default function Sidebar() {
   return (
