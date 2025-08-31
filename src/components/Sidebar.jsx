@@ -5,7 +5,7 @@ import bookIcon from '../assets/bookicon.png'; // Download and place a book icon
 import chatHistoryIcon from '../assets/chatHistoryIcon.png'; // Download and place a chat history icon here
 import chevronRightIcon from '../assets/chevronRightIcon.png'; // Download and place a chevron right icon here
 import workSpaceIcon from '../assets/workSpaceIcon.png'; // Download and place a workspace icon here
-import newChatIcon from '../assets/newChatHistoryIcon.png'; // Download and place a new chat icon here
+import newIcon from '../assets/newIcon.png'; // Download and place a new chat icon here
 
 export default function Sidebar() {
   return (
@@ -31,7 +31,7 @@ export default function Sidebar() {
 
                   <Box sx={{ display: 'flex', alignItems: 'center', width: 288, background: '#C8102E', color: '#fff' }}>
                       <ListItemIcon sx={{ minWidth: 32, mr: 0 }}>
-                          <img src={newChatIcon} alt="Chat History" style={{ width: 24, height: 24 }} />
+                          <img src={newIcon} alt="Chat History" style={{ width: 24, height: 24 }} />
                       </ListItemIcon>
                       <ListItemText primary="New Chat"
                           sx={{
