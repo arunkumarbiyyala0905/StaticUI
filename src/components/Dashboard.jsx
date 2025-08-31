@@ -601,7 +601,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
     flexDirection: "column",
     justifyContent: "flex-end",
     alignItems: "center",
-    position:'relative'
+  //  position:'relative'
       // Place your chat input here
     }}
   >
