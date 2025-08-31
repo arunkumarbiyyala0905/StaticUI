@@ -455,7 +455,7 @@ export default function Dashboard({ showChatScreen, setShowChatScreen }) {
                           </Typography>
                       </Paper>
                       <img src={dashboard}
-                          alt="Landing Visual" style={{ width: '100%', height: '90%',objectFit: 'contain', gap: 0.5 }} />
+                          alt="Landing Visual" style={{ width: '100%', height: '90%', gap: 0.5 }} />
                   </Box>
                   <Box sx={{ display: 'flex', gap: 1, width: '50%', flexDirection: 'column', }}>
                       <Paper elevation={0} sx={{ p: 2, borderRadius: 0, background: '#F8F8F8', height: '348px' }}>
