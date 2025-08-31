@@ -5,7 +5,7 @@ import bookIcon from '../assets/bookicon.png'; // Download and place a book icon
 import chatHistoryIcon from '../assets/chatHistoryIcon.png'; // Download and place a chat history icon here
 import chevronRightIcon from '../assets/chevronRightIcon.png'; // Download and place a chevron right icon here
 import workSpaceIcon from '../assets/workSpaceIcon.png'; // Download and place a workspace icon here
-import Plus from '../assets/plus.png'; // Download and place a plus icon here
+import Plus from '../assets/Plus.png'; // Download and place a plus icon here
 
 export default function Sidebar() {
   return (
